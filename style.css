@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+  transition: all 300ms;
+}
+
+.color {
+  color: hsl(246, 80%, 60%);
+  color: hsl(15, 100%, 70%);
+  color: hsl(195, 74%, 62%);
+  color: hsl(348, 100%, 68%);
+  color: hsl(145, 58%, 55%);
+  color: hsl(264, 64%, 52%);
+  color: hsl(43, 84%, 65%);
+  color: hsl(226, 43%, 10%);
+  color: hsl(235, 46%, 20%);
+  color: hsl(235, 45%, 61%);
+  color: hsl(236, 100%, 87%);
+}
+
+body {
+  background-color: hsl(226, 43%, 10%);
+  height: 100vh;
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.hero {
+  background-color: hsl(235, 46%, 20%);
+  width: 230px;
+  border-radius: 15px;
+}
+
+.hero-jeremy {
+  background-color: hsl(246, 80%, 60%);
+  padding: 1.5em;
+  padding-bottom: 4em;
+  border-radius: 15px;
+}
+
+.hero-img {
+  width: 70px;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 100px;
+}
+
+.report-p {
+  font-size: 13px;
+  color: hsl(236, 100%, 87%);
+  margin-top: 2.5em;
+}
+
+.previous {
+  font-size: 13px;
+  color: hsl(236, 100%, 87%);
+  margin-top: 2.5em;
+}
+
+.hero-name {
+  font-size: 40px;
+  color: rgb(255, 255, 255);
+  font-weight: 100;
+}
+
+ul {
+  padding: 1.5em;
+}
+
+li {
+  list-style: none;
+  padding: 8px 0;
+  color: hsl(235, 45%, 61%);
+  cursor: pointer;
+  width: fit-content;
+}
+
+li:hover {
+  color: rgb(255, 255, 255);
+}
+
+.add_color {
+  color: rgb(255, 255, 255);
+}
+
+.hero-cards {
+  color: rgb(255, 255, 255);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5em;
+  margin-left: 1.5em;
+  width: 750px;
+}
+
+.card {
+  background-color: hsl(235, 46%, 20%);
+  width: 230px;
+  padding: 1.5em;
+  border-radius: 15px;
+  translate: 0% 30%;
+}
+
+.card:hover {
+  filter: brightness(1.5);
+}
+
+.hero-card {
+  border-radius: 15px;
+  height: 215px;
+  background-repeat: no-repeat;
+  background-position: 90% -10px;
+}
+
+.card-work {
+  background-color: hsl(15, 100%, 70%);
+  background-image: url(./images/icon-work.svg);
+}
+
+.card-play {
+  background-color: hsl(195, 74%, 62%);
+  background-image: url(./images/icon-play.svg);
+}
+
+.card-study {
+  background-color: hsl(348, 100%, 68%);
+  background-image: url(./images/icon-study.svg);
+}
+
+.card-exercise {
+  background-color: hsl(145, 58%, 55%);
+  background-image: url(./images/icon-exercise.svg);
+  background-position: 90% 0%;
+}
+
+.card-social {
+  background-color: hsl(264, 64%, 52%);
+  background-image: url(./images/icon-social.svg);
+}
+
+.card-self_care {
+  background-color: hsl(43, 84%, 65%);
+  background-image: url(./images/icon-self-care.svg);
+}
+
+.card-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-title {
+  font-weight: 500;
+}
+
+.card-dots {
+  cursor: pointer;
+}
+
+.card-dots:hover {
+  filter: brightness(1.5);
+}
+
+.card-times {
+  line-height: 10px;
+  margin-top: 3em;
+}
+
+.current {
+  font-weight: 100;
+  font-size: 50px;
+}
+
+.attribution {
+  color: hsl(236, 100%, 87%);
+}
+
+@media screen and (max-width: 1000px) {
+  main {
+    flex-direction: column;
+    height: fit-content;
+    margin: 3em 0;
+    gap: 1.5em;
+  }
+
+  .hero {
+    width: 90%;
+  }
+
+  .hero-jeremy {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+  }
+
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .report-p {
+    margin: 0;
+  }
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .hero-cards {
+    width: 100%;
+    margin: 0;
+    justify-content: center;
+  }
+
+  .hero-card {
+    width: 90%;
+    margin: 0;
+  }
+
+  .card {
+    width: 100%;
+    height: 78%;
+  }
+
+  .card-times {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
